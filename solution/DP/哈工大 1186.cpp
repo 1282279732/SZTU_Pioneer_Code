@@ -1,3 +1,5 @@
+//⭐
+
 //题目连接：(http://acm.hrbust.edu.cn/index.php?m=ProblemSet&a=showProblem&problem_id=1186)
 
 #include <iostream>
