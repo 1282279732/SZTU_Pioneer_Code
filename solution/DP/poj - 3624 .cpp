@@ -1,3 +1,5 @@
+//⭐
+
 //题目1星，套模板就可以AC了
 
 #include <iostream>
