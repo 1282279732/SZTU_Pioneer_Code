@@ -1,3 +1,5 @@
+//⭐⭐
+
 //题目地址：https://www.luogu.com.cn/problem/P1002
 /*
 题意：计算从左上角到右下角有多少条路径
