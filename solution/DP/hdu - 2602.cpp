@@ -1,3 +1,7 @@
+//⭐
+
+//题目地址：https://acm.hdu.edu.cn/showproblem.php?pid=2602
+
 #include <iostream>
 #include <algorithm>
 #include <math.h>
