@@ -1,6 +1,8 @@
-### 硬币找零
-题目链接：https://vjudge.net/problem/%E8%AE%A1%E8%92%9C%E5%AE%A2-T1781
-```
+//⭐
+
+//### 硬币找零
+//题目链接：https://vjudge.net/problem/%E8%AE%A1%E8%92%9C%E5%AE%A2-T1781
+
 #include <iostream>
 #include <string.h>
 #include <math.h>
@@ -40,4 +42,3 @@ int main()
     else printf("-1\n");//不存在输出-1
     return 0;
 }
-```
