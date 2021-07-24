@@ -1,5 +1,5 @@
-题目连接：(http://acm.hrbust.edu.cn/index.php?m=ProblemSet&a=showProblem&problem_id=1186)
-```
+//题目连接：(http://acm.hrbust.edu.cn/index.php?m=ProblemSet&a=showProblem&problem_id=1186)
+
 #include <iostream>
 #include <algorithm>
 #include <string.h>
@@ -38,4 +38,4 @@ int main()
     }
     return 0;
 }
-```
+
