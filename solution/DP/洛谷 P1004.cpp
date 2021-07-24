@@ -1,3 +1,5 @@
+//⭐⭐⭐⭐
+
 /*题目地址：https://www.luogu.com.cn/problem/P1004
 P1004 [NOIP2000 提高组] - 方格取数
 
