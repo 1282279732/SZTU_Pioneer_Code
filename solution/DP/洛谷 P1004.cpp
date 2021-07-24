@@ -1,4 +1,4 @@
-题目地址：https://www.luogu.com.cn/problem/P1004
+/*题目地址：https://www.luogu.com.cn/problem/P1004
 P1004 [NOIP2000 提高组] - 方格取数
 
 ### 题目大意：
@@ -10,8 +10,8 @@ P1004 [NOIP2000 提高组] - 方格取数
 
 ### 心得：
 在时间复杂度允许的条件下，学会用四维dp模拟，思想与二维dp一样
+*/
 
-```
 #include <iostream>
 #include <algorithm>
 #include <string.h>
@@ -48,4 +48,4 @@ int main()
 
     return 0;
 }
-```
+
