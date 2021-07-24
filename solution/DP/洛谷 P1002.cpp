@@ -1,10 +1,10 @@
-题目地址：https://www.luogu.com.cn/problem/P1002
-
+//题目地址：https://www.luogu.com.cn/problem/P1002
+/*
 题意：计算从左上角到右下角有多少条路径
 思路：
 观察可知，从到某一点等于左点和上点路径之和，根据`加法原理`，计算得出的数肯定不漏不多，**dp[i][j]=dp[i-1][j]+dp[i][j-1]**注意不要越界就行啦
+*/
 
-```
 #include <iostream>
 #include <algorithm>
 #include <string.h>
@@ -50,4 +50,4 @@ int main()
     cout << karte[x][y] << endl;    //直接输出即可
     return 0;
 }
-```
+
