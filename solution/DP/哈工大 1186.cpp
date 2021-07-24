@@ -1,6 +1,10 @@
-//⭐
+//⭐⭐
 
 //题目连接：(http://acm.hrbust.edu.cn/index.php?m=ProblemSet&a=showProblem&problem_id=1186)
+
+//由于青蛙可以跳出桥即可，终点是不确定的，但是我们知道起点是0
+//所以我们可以从后面往前面跳，只要最后一步跳到0这个位置就可以了
+//在跳的步数【s,t】区间取最小的石头数目，dp【】状态数组记录最小的石头数量，当跳到0时候，踩到的石头一定是最小的
 
 #include <iostream>
 #include <algorithm>
