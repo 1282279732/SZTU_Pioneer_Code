@@ -1,4 +1,5 @@
 /*
+AtCoder Beginner Contest 211 Task：C
 简单DP
 dp[j]的状态只跟dp[j-1]有关
 */
