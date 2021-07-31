@@ -1,45 +1,46 @@
 
 /*
 方法一：
-记忆化搜索解决：DP+搜索
+记忆化搜索解决：DP+DAG+记忆化搜索
 保存每次的结果，避免重复计算
 */
-#include<iostream>
-#include<algorithm>
-#include<math.h>
-#include<string.h>
+#include <iostream>
+#include <cstring>
+#include <algorithm>
+#include <fstream>
 using namespace std;
 
-int maxSum[105][105];   //保存每次的结果
-int f[105][105];        //原数据
-int n;
+#define inf 0x3f3f3f3f
+typedef long long ll;
+const int maxn = 1000 + 10;
+int n,m;
+int dp[maxn][maxn];                                      //dp[][]表示从(x,y)开始向下搜索求最大权值之和
+int mp[maxn][maxn];                                      //mp[][]用于建图
 
-int Search(int i,int j)
+int  Dp(int x,int y)                                    //记忆化搜索的核心代码在于记录数值
 {
-    if(maxSum[i][j]!=-1)return maxSum[i][j];    //解决了重复计算问题
-    if(i==n)maxSum[i][j]=f[i][j];
-    else
-    {
-        int x=Search(i+1,j);                    //左下值
-        int y=Search(i+1,j+1);                  //右下值
-        maxSum[i][j]=max(x,y)+f[i][j];          //取最大，加上并且保存
+    if(dp[x][y]!=inf)return dp[x][y];                   //如果计算过则直接返回，避免重复计算
+    if(x==n){                                           //如果是最下方的数值，则直接返回并且保存
+        dp[x][y]=mp[x][y];
+        return dp[x][y];
     }
-    //for(int i=1;i<=n;i++)cout << maxSum[n][i] << endl;
-    return maxSum[i][j];                        //返回
-}
 
+    dp[x][y]=mp[x][y]+max(Dp(x+1,y),Dp(x+1,y+1));       //找到下方和右下方最大值，保存并且记录
+
+    return dp[x][y];
+}
 
 int main()
 {
-    cin >> n;
+    int n;
+    scanf("%d",&n);
     for(int i=1;i<=n;i++)
         for(int j=1;j<=i;j++)
-        {
-            cin >> f[i][j];
-            maxSum[i][j]=-1;
-        }
+            scanf("%d",&mp[i][j]);                      //建图
+    memset(dp,inf,sizeof(dp));                          //初始化
 
-    cout << Search(1,1) << endl;
+    printf("%d\n",Dp(1,1));
+    
     return 0;
 }
 
