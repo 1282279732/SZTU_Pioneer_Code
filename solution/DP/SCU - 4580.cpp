@@ -1,5 +1,5 @@
-//⭐⭐
-
+// difficulty：2
+// 01 背包
 /*
 题目地址：https://vjudge.net/problem/SCU-4580
 SCU - 4580 动态规划之01背包问题
