@@ -42,3 +42,7 @@ int main()
     printf("%d\n",len-dp[len][len]);                    //最后直接减去公共子序列长度即可
     return 0;
 }
+ /*
+参考资料：
+https://blog.csdn.net/weixin_40673608/article/details/84262695?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522162779355816780269881100%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=162779355816780269881100&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-84262695.first_rank_v2_pc_rank_v29&utm_term=%E6%9C%80%E9%95%BF%E5%85%AC%E5%85%B1%E5%AD%90%E5%BA%8F%E5%88%97&spm=1018.2226.3001.4187
+*/
