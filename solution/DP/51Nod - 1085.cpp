@@ -1,7 +1,7 @@
-//⭐
+// difficulty：1
+// 51Nod - 1085 背包问题
 
 /*题目地址：https://vjudge.net/problem/51Nod-1085
-51Nod - 1085 背包问题
 
 非常简单的题，重在思想
 
